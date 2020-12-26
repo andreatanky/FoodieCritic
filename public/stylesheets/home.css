@@ -1,0 +1,69 @@
+.cover-container {
+    max-width: 60vw;
+}
+
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url(https://insidevancouver.ca/wp-content/uploads/2019/05/doonuts.jpg);
+    background-size:cover;
+}
+
+.nav-link {
+    padding: 0.25rem 0;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.9);
+    margin-left: 1rem;
+    border-bottom: 0.25rem solid transparent;
+}
+
+.nav-link:hover {
+    border-bottom-color: #fbc4ab;
+    color: #ee0d51;
+}
+
+h2 {
+    color: white;
+}
+
+
+nav {
+    font-family: 'Righteous', cursive;
+}
+
+.footer {
+    background-color: #ff0a54;
+    font-family: 'Righteous', cursive;
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+ #short {
+     color: white;
+     font-family: 'Righteous', cursive;
+ }
+
+ label {
+    color: white;
+    font-family: 'Righteous', cursive;
+ }
+
+ .card {
+    border-radius: 100px
+ }
+
+ #body p {
+    color: #f25c54;
+}
+
+h5 {
+    font-family: 'Righteous', cursive;
+}
+
+
+
+

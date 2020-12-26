@@ -1,0 +1,50 @@
+<% layout('layouts/boilerplate') %>
+<h1 class='text-center'>New Review</h1>
+<div class="col-6 offset-3">
+    <form action="/restaurants" method="POST" novalidate class="validated-form" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label class="form-label" for="title">Name of restaurant</label>
+            <input class="form-control" type="text" id="title" name="restaurant[title]" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="location">Cuisine</label>
+            <input class="form-control" type="text" id="location" name="restaurant[location]" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="input-group mb-3">
+            <label class="form-label" for="price">Approx price /person</label>
+            <div class="input-group">
+                <span class="input-group-text">$</span>
+                <input name="restaurant[price]" type="text" class="form-control" aria-label="Restaurant Price" id="price" placeholder="0.00" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Upload Image</label>
+            <input class="form-control" name="image" type="file" id="formFile">
+        </div>
+        <!-- <div class="mb-3">
+            <label class="form-label" for="image">Image URL</label>
+            <input class="form-control" type="text" id="image" name="campground[image]" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div> -->
+        <div class="mb-3">
+            <label class="form-label" for="description">Description</label>
+            <textarea class="form-control" type="text" id="description" name="restaurant[description]" required></textarea>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <button class="btn" style="background-color: #219ebc">Post review</button>
+    </form>
+    <a href="/restaurants">Back to all reviews</a>
+</div>

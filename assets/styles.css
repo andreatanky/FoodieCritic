@@ -1,0 +1,25 @@
+nav {
+    font-family: 'Righteous', cursive;
+}
+
+nav:hover {
+    color: #e63946;
+}
+
+h5 {
+    color: #e63946;
+    font-family: 'Righteous', cursive;
+}
+
+#body p {
+    color: #247ba0;
+    font-family: 'Righteous', cursive;
+}
+
+#body {
+    background-color:#1d3557;
+    color: #f1faee;
+    font-family: 'Righteous', cursive;
+}
+
+

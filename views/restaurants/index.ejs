@@ -1,0 +1,32 @@
+<% layout('layouts/boilerplate') %>
+<html class="home-bg">
+    <h1>All Reviews</h1>
+     <% for (let restaurant of restaurants) {%> 
+        <div class="card mb-3">
+            <div class="row">
+                <div class="col-md-4">
+                    <% if (restaurant.images.length) {%> 
+                    <img class="img-fluid" alt="" src="<%= restaurant.images[0].url %> ">
+                    <% }else{ %> 
+                        <img class="img-fluid" alt="" src="https://image.shutterstock.com/image-photo/healthy-salad-bowl-quinoa-tomatoes-260nw-521741356.jpg">
+                    <% } %> 
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= restaurant.title %> 
+                        </h5>
+                        <p class="card-text">
+                            <%= restaurant.description %> 
+                        </p>
+                        <p class="card-text">
+                            <small class="text-muted"><%= restaurant.location %> </small>
+                        </p>
+                        <a class="btn" style="background-color: #ff595e" href="/restaurants/<%= restaurant.id %> ">View details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     <% }%> 
+</html>
+    
